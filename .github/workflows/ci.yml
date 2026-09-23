@@ -1,0 +1,12 @@
+name: Demo CI
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet
+        run: echo "Hello from the release-notes bot CI retry demo"
